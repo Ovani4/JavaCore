@@ -17,3 +17,4 @@ public class IfSample {
         if (x == y) System.out.println("Это не будет выводится");
     }
 }
+//
