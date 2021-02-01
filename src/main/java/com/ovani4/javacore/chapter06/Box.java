@@ -9,6 +9,12 @@ class Box {
 
         return width * height * depth;
     }
+
+    void setDim (double w, double h, double d){
+        width = w;
+        height = h;
+        depth = d;
+    }
 }
 class BoxDemo{
     public static void main(String[] args) {
@@ -16,13 +22,16 @@ class BoxDemo{
         Box myBox2 = new Box();
         double vol;
 
-        myBox.width = 10;
-        myBox.height = 20;
-        myBox.depth = 15;
+        myBox.setDim(10,5,15);
+        myBox2.setDim(15,6,4);
 
-        myBox2.width = 2;
-        myBox2.height = 4;
-        myBox2.depth = 6;
+//        myBox.width = 10;
+//        myBox.height = 20;
+//        myBox.depth = 15;
+//
+//        myBox2.width = 2;
+//        myBox2.height = 4;
+//        myBox2.depth = 6;
 
 //        vol = myBox.depth * myBox.height * myBox.width;
 //        System.out.println("Объем равен " + vol);
