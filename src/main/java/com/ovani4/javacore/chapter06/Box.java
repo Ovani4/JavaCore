@@ -5,8 +5,13 @@ class Box {
     double height;
     double depth;
 
-    double volume(){
+    Box(){
+        width = 10;
+        height = 2;
+        depth = 7;
+    }
 
+    double volume(){
         return width * height * depth;
     }
 
@@ -22,8 +27,8 @@ class BoxDemo{
         Box myBox2 = new Box();
         double vol;
 
-        myBox.setDim(10,5,15);
-        myBox2.setDim(15,6,4);
+//        myBox.setDim(10,5,15);
+//        myBox2.setDim(15,6,4);
 
 //        myBox.width = 10;
 //        myBox.height = 20;
